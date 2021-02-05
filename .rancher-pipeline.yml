@@ -15,4 +15,8 @@ stages:
       dockerfilePath: ./Dockerfile
       buildContext: .
       tag: example-helloserver:${CICD_EXECUTION_SEQUENCE}
+- name: Deploy YAML
+  steps:
+  - applyYamlConfig:
+      path: ./deployment.yaml
 notification: {}
