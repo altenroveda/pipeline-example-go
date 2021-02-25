@@ -28,7 +28,7 @@ spec:
         app: helloserver
     spec:
       imagePullSecrets:
-      - name: pipeline-docker-registry
+      - name: localhost-docker-registry
       containers:
       - name: helloserver
         imagePullPolicy: Never
