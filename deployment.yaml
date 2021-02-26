@@ -31,7 +31,6 @@ spec:
       - name: localhost-docker-registry
       containers:
       - name: helloserver
-        imagePullPolicy: Never
         image: ${CICD_IMAGE}:${CICD_EXECUTION_SEQUENCE}
         ports:
         - containerPort: 80
